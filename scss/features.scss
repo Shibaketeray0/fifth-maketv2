@@ -1,0 +1,98 @@
+@import "scss/variables.scss";
+
+.features {
+    border-bottom: none;
+    max-height: 640px;
+    .container {
+      .row_icons {
+        padding-left: 18px;
+        padding-right: 13px;
+      }
+    }
+  
+    .img_circle {
+      color: $blue;
+      padding: 20px 29px 28px 29px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      font-size: 30px;
+    }
+    .fourth {
+      .img_circle {
+        padding: 20px 33.5px 28px 31.5px;
+      }
+    }
+    .first,
+    .second,
+    .third,
+    .fourth {
+      max-width: 240px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      h3 {
+        margin-top: 28px;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+      }
+      p {
+        color: $lightgray;
+        letter-spacing: 0.1px;
+        margin-top: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+    }
+    .row_icons {
+      margin-top: 66px;
+      .w-100 {
+        display: none;
+      }
+    }
+  
+    .row {
+      display: flex;
+      justify-content: space-between;
+      .col {
+        padding-top: 60px;
+        text-align: center;
+        p {
+          text-transform: uppercase;
+          color: $blue;
+          font-weight: 700;
+          font-size: 15px;
+          letter-spacing: 1px;
+          word-spacing: 2px;
+          margin-bottom: 7px;
+          margin-left: 4.7px;
+        }
+        h1 {
+          display: block;
+          margin-left: 7.2px;
+          font-weight: 600;
+          font-size: 37px;
+          letter-spacing: 0.1px;
+          margin-top: 10px;
+        }
+        .line {
+          margin-left: 4px;
+        }
+        .underline {
+          margin-top: 20px;
+        }
+        span:after {
+          content: "";
+          display: inline-block;
+          width: 21px;
+          height: 2px;
+          background: $blue;
+          margin: 0 auto;
+        }
+      }
+    }
+    background-color: rgba(255, 255, 255, 1);
+  }

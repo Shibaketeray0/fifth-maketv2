@@ -1,0 +1,65 @@
+/*little bit changed bootstrap grid*/
+@import "mygrid.scss";
+
+/*some variables for colors*/
+@import "variables.scss";
+
+/*header (logo, navigation, banner below navigation*/
+@import "header.scss";
+
+/*block with features*/
+@import "features.scss";
+
+/*block with title beautiful on every device*/
+@import "beautiful.scss";
+
+/*block with title super easy to customize*/
+@import "super_easy.scss";
+
+/*slider*/
+@import "slider.scss";
+
+/*block with title like what you see and 2 buttons*/
+@import "like_what_u_see.scss";
+
+/*price cards*/
+@import "pricings.scss";
+
+/*form and map*/
+@import "contact.scss";
+
+/*footer*/
+@import "footer.scss";
+
+/*media queries*/
+@import "media_queries.scss";
+
+/*little selectors no sense to make separate files for each*/
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body > * {
+  margin-top: -5px;
+}
+.wrapper {
+  overflow-x: hidden;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+.col {
+  padding: 0;
+}
+.content {
+  flex: 1 1 auto;
+}
+iframe {
+  margin-top: -68px;
+}
+
+

@@ -1,0 +1,51 @@
+@import "scss/variables.scss";
+
+.footer {
+    text-align: center;
+    margin-top: -7px;
+    background: $gray;
+    .col {
+      .fa-behance {
+        margin-right: 30px;
+      }
+      .fa-behance:hover {
+        color: #fff;
+      }
+      .fa-dribbble {
+        margin-right: 30px;
+      }
+      .fa-dribbble:hover {
+        color: #f10081;
+      }
+      .fa-twitter:hover {
+        color: #4a8af6;
+      }
+      .fa-facebook-f {
+        margin-left: 30px;
+      }
+      .fa-facebook-f:hover {
+        color: #584bb3;
+      }
+      .fa-linkedin-in {
+        margin-left: 30px;
+      }
+      .fa-linkedin-in:hover {
+        color: #25599b;
+      }
+      i {
+        font-size: 19px;
+        margin-top: 4px;
+        color: $lightgray;
+      }
+      padding: 51px 0 32px 0;
+    }
+    p {
+      color: $lightgray;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+      word-spacing: 0.1px;
+      margin-left: 5px;
+      margin-top: 22px;
+    }
+  }

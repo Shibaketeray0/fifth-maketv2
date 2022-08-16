@@ -1,0 +1,166 @@
+@import "scss/variables.scss";
+
+.contact {
+    z-index: 2;
+    background: #ededed;
+    padding-top: 58px;
+    .row2 {
+      margin-top: 51px;
+      /*загальні параметри для колонок з контактами*/
+      .col {
+        p {
+          color: $lightgray;
+          font-size: 18px;
+          margin-right: 27px;
+          font-weight: 400;
+          letter-spacing: 0.1px;
+          word-spacing: 0.1px;
+        }
+        img {
+          color: $blue;
+          margin-bottom: 27px;
+          font-size: 30px;
+        }
+        text-align: center;
+        margin: 0;
+      }
+      .col_1 {
+        p {
+          margin-right: 27px;
+        }
+        img {
+          margin-right: 20px;
+        }
+      }
+      .col_2 {
+        p {
+          margin-left: 33px;
+        }
+        img {
+          margin-left: 6px;
+        }
+      }
+      .col_3 {
+        p {
+          margin-left: 53px;
+          margin-top: 3px;
+        }
+        img {
+          margin-top: 7px;
+          margin-left: 28.5px;
+        }
+      }
+    }
+    /*contact form*/
+    .row3 {
+      .form {
+        z-index: 2;
+        margin-top: 72px;
+        padding-left: 5px;
+      }
+      form {
+        position: relative;
+        z-index: 2;
+        background: $gray;
+        padding: 60px 81px 115px 63px;
+        margin: 0 auto;
+        max-width: 794px;
+        .fields_3 {
+          margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+        }
+        .fields {
+          display: flex;
+          justify-content: center;
+        }
+        input {
+          color: gray;
+          padding: 13px 18px;
+          background: $gray;
+          min-width: 310px;
+          outline: none;
+          border-radius: 4px;
+          border: 0.1px solid #46454b;
+        }
+        textarea {
+          color: gray;
+          padding: 14px 18px;
+          background: $gray;
+          border-radius: 4px;
+          border: 0.1px solid #46454b;
+          min-width: 310px;
+          outline: none;
+          resize: none;
+        }
+        textarea::placeholder {
+          font-size: 15px;
+          font-weight: 600;
+        }
+  
+        input::placeholder {
+          font-size: 15px;
+          font-weight: 600;
+        }
+        #email,
+        #subject {
+          margin-top: 20px;
+        }
+        button {
+          float: right;
+          transition: all 0.3s ease 0s;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          border-radius: 3px;
+          text-transform: uppercase;
+          padding: 14px 35px;
+          font-size: 14px;
+          font-weight: 700;
+          color: #fff;
+          letter-spacing: 0.2px;
+          border: 0.1px solid #46454b;
+          display: block;
+          margin-top: 23px;
+          margin-right: 5px;
+          border-radius: 5px;
+        }
+        button:hover {
+          border: 0.1px solid transparent;
+          background: $blue;
+        }
+      }
+    }
+  
+    p {
+      color: $blue;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 1.1px;
+      word-spacing: 2px;
+      transition: all 0.3s ease 0s;
+      word-spacing: 0.5px;
+      margin: 0;
+      margin-left: 4px;
+    }
+    h1 {
+      margin-top: 7px;
+      font-weight: 600;
+      font-size: 37px;
+      letter-spacing: 0.1px;
+      color: #1a1a1a;
+      margin-left: 4px;
+    }
+    text-align: center;
+    .lines {
+      margin-left: 4px;
+      margin-top: 13px;
+    }
+    span:after {
+      content: "";
+      display: inline-block;
+      width: 20.5px;
+      height: 2px;
+      background: $blue;
+    }
+  }

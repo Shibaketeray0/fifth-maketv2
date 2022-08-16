@@ -1,0 +1,49 @@
+@import "scss/variables.scss";
+
+.like_what {
+    padding: 56px 0 60px 0;
+    background: $gray;
+    .thin {
+      color: #fff;
+      font-weight: 300;
+      font-size: 37px;
+      letter-spacing: 0.1px;
+      margin-left: 3px;
+    }
+    .thick {
+      font-weight: 600;
+      font-size: 37px;
+      letter-spacing: 0.1px;
+      color: #fff;
+    }
+    .buttons {
+      float: right;
+      margin: auto 0;
+      display: inline-block;
+      margin-left: auto;
+  
+      button {
+        margin-top: 5px;
+        margin-left: 22px;
+        transition: all 0.3s ease 0s;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: 15px 22px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.2px;
+        border: 0.1px solid #fff;
+      }
+      .button2 {
+        padding: 15px 32px;
+      }
+      button:hover {
+        border: 0.1px solid transparent;
+        background: $blue;
+      }
+    }
+  }

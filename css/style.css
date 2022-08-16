@@ -10907,7 +10907,7 @@ col {
   letter-spacing: 0.2px;
 }
 .row2 .col2 .buttons button {
-  border: 0.01px solid #fff;
+  border: 0.1px solid #fff;
   transition: all 0.3s ease 0s;
   background-color: transparent;
   outline: none;
@@ -11279,13 +11279,25 @@ col {
   font-size: 16px;
 }
 
+.slick-dots li[class=slick-active] button {
+  padding-top: 12px;
+}
+
 .slider .slide {
   margin-bottom: 138px;
   padding-left: 12px;
 }
 
+.slick-track {
+  margin-bottom: 7px;
+}
+
+.slider .slick-dots li.slick-active button::before {
+  width: 15px;
+  height: 15px;
+}
 .slider .slick-dots {
-  margin-bottom: 30px;
+  margin-left: 2px;
 }
 .slider .slick-dots li button::before {
   margin-left: 4px;
@@ -11294,8 +11306,9 @@ col {
   border-radius: 50%;
   font-size: 10px;
   content: " ";
-  background: #999999;
-  margin-top: 30px;
+  background: #000;
+  width: 8px;
+  height: 8px;
 }
 
 /*block with title like what you see and 2 buttons*/
@@ -11436,7 +11449,7 @@ col {
   color: #008ed6;
   margin-top: 41px;
   letter-spacing: 0.2px;
-  border: 0.1px solid lightgray;
+  border: 0.1px solid gray;
   margin-bottom: 28px;
 }
 .pricings .row_cards .cardd .some_card_text {

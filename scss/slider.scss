@@ -108,15 +108,26 @@
       margin-top: 81px;
     }
   }
+  .slick-dots li[class="slick-active"] button {
+    padding-top:12px;
+}
+
   .slider {
     .slide {
       margin-bottom: 138px;
       padding-left: 12px;
     }
   }
+  .slick-track{
+    margin-bottom: 7px;
+  }
   .slider{
+    .slick-dots li.slick-active button::before{
+      width:15px;
+      height: 15px;
+    }
     .slick-dots {
-    margin-bottom: 30px;
+      margin-left: 2px;
     li {
       button::before {
         margin-left: 4px;
@@ -125,10 +136,10 @@
         border-radius: 50%;
         font-size: 10px;
         content:' ';
-        background: $lightgray;
-        margin-top: 30px;
+        background: #000;
+        width:8px;
+        height: 8px;
       }
     }
   }
   }
-  

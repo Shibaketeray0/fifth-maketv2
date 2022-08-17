@@ -10801,39 +10801,45 @@ col {
   z-index: 100;
   display: flex;
   float: right;
+  /*2 spans for lines below each li(didnt know how to make it any other way)*/
 }
 .col1 .nav__ul li {
   height: 25px;
-  margin-left: 23px;
+  margin-left: 24px;
   margin-top: 3px;
   display: inline;
   list-style-type: none;
   font-weight: 600;
   font-size: 16px;
-  margin-right: 0;
 }
 .col1 .nav__ul li a {
   transition: all 0.5s ease 0s;
   color: #fff;
   text-decoration: none;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 }
-.col1 .nav__ul li a:before:hover {
-  border-bottom: 1px solid #008ed6;
+.col1 .nav__ul a:hover ~ .lines {
+  opacity: 1;
 }
-.col1 .nav__ul li:after {
-  display: none;
+.col1 .nav__ul span {
+  width: 19px;
+  margin: 0 1px;
+}
+.col1 .nav__ul span:after {
   content: "";
-  width: 30px;
+  display: block;
+  width: 19px;
   height: 2px;
   background: #008ed6;
-  margin: 0 auto;
-  margin-top: 9px;
 }
-.col1 .nav__ul li:hover:after {
-  display: block;
+.col1 .nav__ul .lines {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
 }
 
+/*z-index for logo. When burger menu comes it doesnt cover logo */
 .logo.logo_active {
   text-transform: uppercase;
   z-index: 100;
@@ -10867,7 +10873,7 @@ col {
   font-size: 27px;
 }
 .logo p {
-  color: #35363d;
+  color: #5c5d63;
   letter-spacing: 1px;
   font-weight: 600;
   line-height: 10px;
@@ -10950,7 +10956,7 @@ col {
 .features .img_circle {
   color: #008ed6;
   padding: 20px 29px 28px 29px;
-  border: 1px solid gray;
+  border: 1px solid #999999;
   border-radius: 50%;
   font-size: 30px;
 }
@@ -11177,8 +11183,9 @@ col {
 /*slider*/
 .slider_tint {
   background-color: rgba(0, 0, 0, 0.8);
-  padding-bottom: 56px;
+  padding-bottom: 49px;
 }
+
 .slider_bg {
   z-index: 1;
   width: 100%;
@@ -11281,6 +11288,7 @@ col {
 
 .slick-dots li[class=slick-active] button {
   padding-top: 12px;
+  padding-right: 3px;
 }
 
 .slider .slide {
@@ -11306,7 +11314,7 @@ col {
   border-radius: 50%;
   font-size: 10px;
   content: " ";
-  background: #000;
+  background: #fff;
   width: 8px;
   height: 8px;
 }
@@ -11401,19 +11409,40 @@ col {
   /*карточка товару*/
   /*деякі кастомні параметри для карточок */
 }
-.pricings .row_cards .cardd:hover .price {
+.pricings .row_cards .card_n1.hovered .price,
+.pricings .row_cards .card_n2.hovered .price,
+.pricings .row_cards .card_n3.hovered .price,
+.pricings .row_cards .card_n4.hovered .price {
   background-color: #008ed6;
   transition: all 0.3s ease 0s;
 }
-.pricings .row_cards .cardd:hover .price h3, .pricings .row_cards .cardd:hover .price .h3,
-.pricings .row_cards .cardd:hover .price p {
+.pricings .row_cards .card_n1.hovered .price h3, .pricings .row_cards .card_n1.hovered .price .h3,
+.pricings .row_cards .card_n1.hovered .price p,
+.pricings .row_cards .card_n2.hovered .price h3,
+.pricings .row_cards .card_n2.hovered .price .h3,
+.pricings .row_cards .card_n2.hovered .price p,
+.pricings .row_cards .card_n3.hovered .price h3,
+.pricings .row_cards .card_n3.hovered .price .h3,
+.pricings .row_cards .card_n3.hovered .price p,
+.pricings .row_cards .card_n4.hovered .price h3,
+.pricings .row_cards .card_n4.hovered .price .h3,
+.pricings .row_cards .card_n4.hovered .price p {
   color: #fff;
 }
-.pricings .row_cards .cardd:hover button {
+.pricings .row_cards .card_n1.hovered button,
+.pricings .row_cards .card_n2.hovered button,
+.pricings .row_cards .card_n3.hovered button,
+.pricings .row_cards .card_n4.hovered button {
   background-color: #008ed6;
   color: #fff;
 }
-.pricings .row_cards .cardd:hover h3, .pricings .row_cards .cardd:hover .h3 {
+.pricings .row_cards .card_n1.hovered h3, .pricings .row_cards .card_n1.hovered .h3,
+.pricings .row_cards .card_n2.hovered h3,
+.pricings .row_cards .card_n2.hovered .h3,
+.pricings .row_cards .card_n3.hovered h3,
+.pricings .row_cards .card_n3.hovered .h3,
+.pricings .row_cards .card_n4.hovered h3,
+.pricings .row_cards .card_n4.hovered .h3 {
   transition: all 0.3s ease 0s;
   color: #008ed6;
 }
@@ -11825,7 +11854,7 @@ col {
     margin-left: 0;
     margin-right: 0;
   }
-  .beautiful .row .col img {
+  .beautiful .row .col .phones {
     margin-left: 0;
   }
   .beautiful .row .col_beautiful {
@@ -11917,6 +11946,12 @@ col {
   }
 }
 @media (max-width: 767px) {
+  .contact .container {
+    padding-right: 0;
+  }
+  .col1 .nav__ul li .lines {
+    display: none;
+  }
   .slider_tint .slick-dots {
     padding-right: 40px;
   }
@@ -12095,6 +12130,12 @@ col {
   }
 }
 @media (max-width: 575px) {
+  .footer .container {
+    padding-left: 0;
+  }
+  .contact .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
   .contact .container .row {
     margin-right: 0;
   }

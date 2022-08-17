@@ -126,7 +126,7 @@
     }
   }
 
-  .beautiful .row .col img {
+  .beautiful .row .col .phones {
     margin-left: 0;
   }
   .beautiful .row .col_beautiful {
@@ -260,12 +260,29 @@
   }
 }
 @media (max-width: 767px) {
-  .slider_tint{
-    .slick-dots{
-    padding-right: 40px;
-  }
+  .contact{
+    .container{
+      padding-right:0;
+    }
   }
   
+  
+  .col1 {
+    .nav__ul {
+      li {
+        .lines {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .slider_tint {
+    .slick-dots {
+      padding-right: 40px;
+    }
+  }
+
   .like_what .buttons {
     button {
       margin-left: 0;
@@ -471,8 +488,15 @@
   }
 }
 @media (max-width: 575px) {
+  .footer{
+    .container{
+      padding-left: 0;
+    }
+  }
+  
   .contact {
     .container {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
       .row {
         margin-right: 0;
       }
